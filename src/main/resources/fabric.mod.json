@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "id": "progression_pls",
+  "version": "${version}",
+  "name": "Progression PLS",
+  "description": "Do you feel like there's a lack of gear progression? Well worry no more! Now you can craft/find lots of gear to help progress you through the game. Have fun and enjoy the gear progression aspect! ",
+  "authors": ["anhpls"],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+  "license": "CC0-1.0",
+  "icon": "assets/progression_pls/icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": ["com.anhpls.progressionpls.Progression_pls"],
+    "client": ["com.anhpls.progressionpls.client.Progression_plsClient"]
+  },
+  "mixins": [
+    "progression_pls.mixins.json",
+    {
+      "config": "progression_pls.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=0.19.5",
+    "minecraft": "~26.2",
+    "java": ">=25",
+    "fabric-api": "*",
+    "trinkets_updated": ">=4.1.0"
+  }
+}

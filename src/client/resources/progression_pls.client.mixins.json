@@ -1,0 +1,12 @@
+{
+  "required": true,
+  "package": "com.anhpls.progressionpls.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": ["ExampleClientMixin", "InventoryScreenParticleToggleMixin"],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

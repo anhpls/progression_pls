@@ -1,0 +1,15 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+PS C:\Users\Anh Huynh\Desktop\progression_pls-template-26.2> gradlew.bat build
+gradlew.bat : The term 'gradlew.bat' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ gradlew.bat build
++ ~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (gradlew.bat:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command gradlew.bat was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\gradlew.bat". See "get-help about_Command_Precedence" for more details.
+PS C:\Users\Anh Huynh\Desktop\progression_pls-template-26.2>

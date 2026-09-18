@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "I": "minecraft:iron_nugget",
+    "S": "minecraft:oak_sapling"
+  },
+  "pattern": [" I ", " I ", " S "],
+  "result": {
+    "id": "progression_pls:oak_sapling_earrings",
+    "count": 1
+  }
+}

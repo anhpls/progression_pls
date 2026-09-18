@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "progression_pls:item/oak_sapling_earrings"
+  }
+}
