@@ -11,15 +11,17 @@ import java.util.Set;
 public final class SpiralAuraEffect implements AuraEffect {
 
     public static final SpiralAuraEffect INSTANCE = new SpiralAuraEffect();
-    private SpiralAuraEffect() {}
+
+    private SpiralAuraEffect() {
+    }
 
     public static void registerDefaults() {
-        SpiralAuraRegistry.register(ModItems.SPROUT,
-                new SpiralAuraRegistry.SpiralSpec(
-                        ParticleTypes.END_ROD,
-                        1.3, 0.0, 2.3, 30, 2.0, 1,
-                        true, VfxTrigger.ALWAYS
-                ));
+        // SpiralAuraRegistry.register(ModItems.SPROUT,
+        // new SpiralAuraRegistry.SpiralSpec(
+        // ParticleTypes.END_ROD,
+        // 1.3, 0.0, 2.3, 30, 2.0, 1,
+        // true, VfxTrigger.ALWAYS
+        // ));
     }
 
     @Override
@@ -44,7 +46,8 @@ public final class SpiralAuraEffect implements AuraEffect {
 
         for (int i = 0; i < segments; i++) {
             double subTick = time - (i * 0.15);
-            double progress = ((subTick % spec.cycleTicks()) + spec.cycleTicks()) % spec.cycleTicks() / spec.cycleTicks();
+            double progress = ((subTick % spec.cycleTicks()) + spec.cycleTicks()) % spec.cycleTicks()
+                    / spec.cycleTicks();
 
             double height = spec.heightMin() + progress * (spec.heightMax() - spec.heightMin());
             double angle = progress * spec.revolutions() * (2 * Math.PI);
