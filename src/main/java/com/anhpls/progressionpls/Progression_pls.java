@@ -3,6 +3,7 @@ package com.anhpls.progressionpls;
 import net.fabricmc.api.ModInitializer;
 import com.anhpls.progressionpls.loot.ModLootTables;
 import com.anhpls.progressionpls.item.ModCreativeTabs;
+import com.anhpls.progressionpls.item.ModParticleTypes;
 
 import net.minecraft.resources.Identifier;
 
@@ -25,6 +26,7 @@ public class Progression_pls implements ModInitializer {
 
 		LOGGER.info("Loading ProgressionPLS");
 		ModCreativeTabs.register();
+		ModParticleTypes.register();
 		com.anhpls.progressionpls.item.ModItems.register();
 		ModLootTables.register();
 	}
