@@ -35,6 +35,36 @@ dependencies {
 	implementation "maven.modrinth:trinkets-updated:4.1.0+26.2"
 }
 
+// --- Automatic PATCH-version bump, on real `build` runs only ---------------
+// Only fires when the actual `build` task is requested (a real packaged jar),
+// never on the incremental compileJava/classes runs an IDE fires constantly
+// in the background while you type -- so patch numbers stay meaningful
+// instead of climbing into the hundreds from routine editing.
+//
+// MAJOR and MINOR are never touched here on purpose: those are a deliberate
+// call you make yourself in gradle.properties when a release actually adds a
+// feature (bump MINOR) or breaks compatibility (bump MAJOR) -- see SemVer.
+if (gradle.startParameter.taskNames.any { it == 'build' || it.endsWith(':build') }) {
+	def propsFile = file('gradle.properties')
+	def propsText = propsFile.text
+	def matcher = propsText =~ /(?m)^version=(\d+)\.(\d+)\.(\d+)(.*)$/
+	if (matcher.find()) {
+		def major = matcher.group(1)
+		def minor = matcher.group(2)
+		def patch = matcher.group(3).toInteger() + 1
+		def suffix = matcher.group(4) // preserves "-alpha", "+26.2", etc. untouched
+
+		def newVersion = "${major}.${minor}.${patch}${suffix}"
+
+		propsFile.text = propsText.replaceFirst(/(?m)^version=.*$/, "version=${newVersion}")
+		project.version = newVersion
+
+		logger.lifecycle("Auto-incremented patch version -> ${newVersion}")
+	} else {
+		logger.warn("Could not parse 'version=' in gradle.properties for auto-increment; leaving it as-is.")
+	}
+}
+
 processResources {
 	def version = project.version
 	inputs.property "version", version

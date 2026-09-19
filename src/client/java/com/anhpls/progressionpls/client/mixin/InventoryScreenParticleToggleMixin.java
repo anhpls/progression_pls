@@ -53,11 +53,10 @@ public abstract class InventoryScreenParticleToggleMixin extends AbstractContain
     // the master toggle above (which is all-or-nothing) and from /vfxtune's `enabled`
     // (a dev/balance flag, not meant for players to fiddle with every session).
     //
-    // Positioned OFF the inventory panel entirely (unlike the master toggle, which sits
-    // in the panel's corner) — hugging whichever screen edge has more open space, so it
-    // never overlaps the panel itself, the hotbar, or vanilla's potion-effect icons
-    // (which claim whichever side has room). If the window is too narrow for a readable
-    // button on either side, the column is skipped rather than drawn over something else.
+    // Always pinned to the LEFT edge of the screen (unlike the master toggle, which
+    // sits in the panel's corner) so its position is predictable and consistent instead
+    // of jumping sides depending on window size. If the window is too narrow for a
+    // readable button there, the column is skipped rather than drawn over the panel.
     private void progressionpls$addPerItemToggleButtons() {
         Player player = this.minecraft.player;
         if (player == null) return;
@@ -74,13 +73,10 @@ public abstract class InventoryScreenParticleToggleMixin extends AbstractContain
 
         int margin = 4;
         int leftGap = this.leftPos - margin * 2;
-        int rightGap = this.width - (this.leftPos + this.imageWidth) - margin * 2;
-        boolean useLeftSide = leftGap >= rightGap;
-        int availableGap = Math.max(leftGap, rightGap);
-        if (availableGap < 40) return;
+        if (leftGap < 40) return;
 
-        int buttonWidth = Math.min(100, availableGap);
-        int x = useLeftSide ? margin : this.width - buttonWidth - margin;
+        int buttonWidth = Math.min(100, leftGap);
+        int x = margin;
         int y = this.topPos;
 
         for (Item item : equippedVfxItems) {
