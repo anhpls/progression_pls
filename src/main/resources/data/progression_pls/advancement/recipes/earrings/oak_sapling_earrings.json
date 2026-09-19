@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_iron_nugget": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:iron_nugget"] }] }
+    },
+    "has_oak_sapling": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:oak_sapling"] }] }
+    }
+  },
+  "requirements": [["has_iron_nugget", "has_oak_sapling"]],
+  "rewards": { "recipes": ["progression_pls:earrings/oak_sapling_earrings"] }
+}

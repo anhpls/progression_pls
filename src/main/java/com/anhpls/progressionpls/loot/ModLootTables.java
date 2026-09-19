@@ -21,7 +21,8 @@ public class ModLootTables {
             new DungeonLootEntry(ModItems.EGG_TOAST, 0.15f),
             new DungeonLootEntry(ModItems.BROKEN_GLASSES, 0.15f),
             new DungeonLootEntry(ModItems.SPROUT, 0.08f),
-            new DungeonLootEntry(ModItems.GOLDEN_CARROT_EMBLEM, 0.03f)
+            new DungeonLootEntry(ModItems.GOLDEN_CARROT_EMBLEM, 0.03f),
+            new DungeonLootEntry(ModItems.HEART_RING, 0.03f)
     );
 
     private static final Set<Identifier> DUNGEON_CHEST_TABLES = Set.of(

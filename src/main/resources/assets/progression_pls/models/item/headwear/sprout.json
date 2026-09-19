@@ -2,8 +2,8 @@
 	"format_version": "1.21.11",
 	"credit": "Made with Blockbench",
 	"textures": {
-		"0": "progression_pls:item/sprout",
-		"particle": "progression_pls:item/sprout"
+		"0": "progression_pls:item/headwear/sprout",
+		"particle": "progression_pls:item/headwear/sprout"
 	},
 	"elements": [
 		{

@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "G": "minecraft:lime_dye",
+    "L": "minecraft:lily_of_the_valley",
+    "B": "minecraft:glow_berries",
+    "E": "minecraft:emerald"
+  },
+  "pattern": ["B B", "LLL", "EGE"],
+  "result": {
+    "id": "progression_pls:sprout",
+    "count": 1
+  }
+}

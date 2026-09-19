@@ -1,0 +1,12 @@
+{
+  "gives": {
+    "id": "progression_pls:gold_ring"
+  },
+  "max_uses": 3,
+  "reputation_discount": 0.05,
+  "wants": {
+    "count": 5,
+    "id": "progression_pls:chrome_ring"
+  },
+  "xp": 10
+}

@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "progression_pls:item/golden_carrot_emblem"
+    "model": "progression_pls:item/emblem/golden_carrot_emblem"
   }
 }

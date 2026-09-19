@@ -1,6 +1,6 @@
 {
   "model": {
     "type": "minecraft:model",
-    "model": "progression_pls:item/oak_sapling_earrings"
+    "model": "progression_pls:item/earrings/oak_sapling_earrings"
   }
 }

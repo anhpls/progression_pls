@@ -1,0 +1,25 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_nautilus_shell": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:nautilus_shell"] }] }
+    },
+    "has_iron_ingot": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:iron_ingot"] }] }
+    },
+    "has_copper_block": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:copper_block"] }] }
+    },
+    "has_breeze_rod": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:breeze_rod"] }] }
+    }
+  },
+  "requirements": [
+    ["has_nautilus_shell", "has_iron_ingot", "has_copper_block", "has_breeze_rod"]
+  ],
+  "rewards": { "recipes": ["progression_pls:rings/chrome_ring"] }
+}

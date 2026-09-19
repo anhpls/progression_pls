@@ -1,0 +1,30 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_lime_dye": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:lime_dye"] }] }
+    },
+    "has_lily_of_the_valley": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:lily_of_the_valley"] }] }
+    },
+    "has_glow_berries": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:glow_berries"] }] }
+    },
+    "has_emerald": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:emerald"] }] }
+    }
+  },
+  "requirements": [
+    [
+      "has_emerald",
+      "has_glow_berries",
+      "has_lily_of_the_valley",
+      "has_lime_dye"
+    ]
+  ],
+  "rewards": { "recipes": ["progression_pls:headwear/sprout"] }
+}

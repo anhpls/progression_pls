@@ -1,0 +1,16 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "B": "minecraft:experience_bottle",
+    "A": "minecraft:enchanted_golden_apple",
+    "P": "minecraft:heart_pottery_sherd",
+    "S": "minecraft:heart_of_the_sea",
+    "G": "progression_pls:gold_ring"
+  },
+  "pattern": ["BAB", "PSP", "GGG"],
+  "result": {
+    "id": "progression_pls:heart_ring",
+    "count": 1
+  }
+}

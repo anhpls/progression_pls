@@ -1,0 +1,15 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_egg": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:egg"] }] }
+    },
+    "has_bread": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:bread"] }] }
+    }
+  },
+  "requirements": [["has_egg", "has_bread"]],
+  "rewards": { "recipes": ["progression_pls:face_accessories/egg_toast"] }
+}

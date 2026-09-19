@@ -7,5 +7,9 @@
   "item.progression_pls.sprout": "Sprouted",
   "itemGroup.progression_pls.headwear": "Headwear",
   "item.progression_pls.golden_carrot_emblem": "Golden Carrot Emblem",
-  "itemGroup.progression_pls.emblem": "Emblem"
+  "itemGroup.progression_pls.emblems": "Emblems",
+  "item.progression_pls.gold_ring": "Gold Ring",
+  "item.progression_pls.heart_ring": "Heart Ring",
+  "item.progression_pls.chrome_ring": "Chrome Ring",
+  "itemGroup.progression_pls.rings": "Rings"
 }

@@ -14,7 +14,7 @@ public final class HeartAuraEffect implements AuraEffect {
     private HeartAuraEffect() {}
 
     public static void registerDefaults() {
-        HeartAuraRegistry.register(ModItems.EGG_TOAST,
+        HeartAuraRegistry.register(ModItems.HEART_RING,
                 new HeartAuraRegistry.HeartSpec(
                         new HeartAuraOptions(0.08f, 0.2),
                         0.15, 1.3, 80, 24,

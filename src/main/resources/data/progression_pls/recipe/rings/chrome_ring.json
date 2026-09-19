@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "equipment",
+  "key": {
+    "N": "minecraft:nautilus_shell",
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_block",
+    "B": "minecraft:breeze_rod"
+  },
+  "pattern": [" N ", "ICI", "BBB"],
+  "result": {
+    "id": "progression_pls:chrome_ring",
+    "count": 1
+  }
+}

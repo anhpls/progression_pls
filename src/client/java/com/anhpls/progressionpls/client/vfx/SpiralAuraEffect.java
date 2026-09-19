@@ -16,12 +16,12 @@ public final class SpiralAuraEffect implements AuraEffect {
     }
 
     public static void registerDefaults() {
-        // SpiralAuraRegistry.register(ModItems.SPROUT,
-        // new SpiralAuraRegistry.SpiralSpec(
-        // ParticleTypes.END_ROD,
-        // 1.3, 0.0, 2.3, 30, 2.0, 1,
-        // true, VfxTrigger.ALWAYS
-        // ));
+        SpiralAuraRegistry.register(ModItems.SPROUT,
+        new SpiralAuraRegistry.SpiralSpec(
+        ParticleTypes.END_ROD,
+        1.3, 0.0, 2.3, 30, 2.0, 1,
+        true, VfxTrigger.ALWAYS
+        ));
     }
 
     @Override

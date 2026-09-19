@@ -1,0 +1,39 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_experience_bottle": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:experience_bottle"] }] }
+    },
+    "has_enchanted_golden_apple": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["minecraft:enchanted_golden_apple"] }]
+      }
+    },
+    "has_heart_pottery_sherd": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [{ "items": ["minecraft:heart_pottery_sherd"] }]
+      }
+    },
+    "has_heart_of_the_sea": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["minecraft:heart_of_the_sea"] }] }
+    },
+    "has_gold_ring": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": ["progression_pls:gold_ring"] }] }
+    }
+  },
+  "requirements": [
+    [
+      "has_experience_bottle",
+      "has_enchanted_golden_apple",
+      "has_heart_pottery_sherd",
+      "has_heart_of_the_sea",
+      "has_gold_ring"
+    ]
+  ],
+  "rewards": { "recipes": ["progression_pls:rings/heart_ring"] }
+}
